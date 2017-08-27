@@ -7,7 +7,8 @@ var express                  = require("express"),
     passportLocalMongoose    = require("passport-local-mongoose");
 
 
-mongoose.connect("mongodb://localhost/zettadb");   
+//mongoose.connect("mongodb://localhost/zettadb");
+mongoose.connect("mongodb://zetta1:zettapp@ds055782.mlab.com:55782/zettag");   
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs" );
 app.use(express.static(__dirname + "/public"));
