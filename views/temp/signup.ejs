@@ -1,0 +1,45 @@
+<% include partials/header.ejs %>
+<% include partials/midlogin.ejs %>
+
+<div class="container">
+<h1>Sign Up To Stay Up To Date With Zetta G</h1>
+<h4>Fields Marked With <sup>*</sup> are mandatory to fill</h4>
+	<form action="/signup" method="POST">
+  <div class="form-group col-lg-6">
+    <label>First Name<sup>*</sup></label>
+    <input type="text" class="form-control" name="Fname" placeholder="Type Your First Name Here" required="true">
+    <label>Last Name<sup>*</sup></label>
+    <input type="text" class="form-control" name="Lname" placeholder="Type Your Last Name Here" required="true">
+    <label for="email">Email address<sup>*</sup></label>
+    <input type="email" class="form-control" name="emailz" id="email" placeholder="Your Email Address" required="true">
+    <label for="pwd">Password<sup>*</sup></label>
+    <input type="password" name="passz" class="form-control" id="pwd" name="pass">
+    <label>Confirm Password<sup>*</sup></label>
+    <input type="password" class="form-control" name="pass">
+    <label>DOB<sup>*</sup></label>
+    <input type="date" class="form-control" name="dob">
+    <label>Mobile Number</label>
+    <input type="tel" class="form-control" name="mob" minlength="10" maxlength="10">
+    <label>City</label>
+  <select class="form-control">
+    <option selected>------City------</option>
+    <option value="1">Delhi</option>
+    <option value="2">Mumbai</option>
+    <option value="3">Kolkata</option>
+    <option value="1">Hyderabad</option>
+    <option value="2">Chennai</option>
+    <option value="3">Kerela</option>
+    <option value="1">Assam</option>
+    <option value="2">Punjab</option>
+    <option value="3">Haryana</option>
+  </select>
+    <br>
+    <button type="submit" class="btn btn-lg">Sign Up</button>
+    
+  </div>
+ 
+</form>
+</div>
+
+
+<% include partials/footer.ejs %>

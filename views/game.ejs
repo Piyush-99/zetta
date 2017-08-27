@@ -1,0 +1,52 @@
+<% include partials/header.ejs %>
+<% include partials/midgame.ejs %>
+
+<div class="col-lg-12" align="center">
+<button class = "btn-lg btn-success resett">Reset</button>
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12 winner" style="float: left; margin-top: 50px">
+<center><p style ="font-size: 70px" class="players"><%=pname%></p>
+<br>
+<br>
+<p style="font-size: 55px"> Wins : 
+<span id="player1wins">0</span></p></center>
+</div>
+
+
+
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+<table align="center">
+	<tr>
+		<td id="1"></td>
+		<td id="2" class="vertical"></td>
+		<td id="3"></td>
+	</tr>
+	<tr>
+		<td id="4" class="horizontal"></td>
+		<td id="5" class="vertical horizontal"></td>
+		<td id="6" class="horizontal"></td>
+	</tr>
+	<tr>
+		<td id="7"></td>
+		<td id=8 class="vertical"></td>
+		<td id="9"></td>
+	</tr>
+</table>
+</div>
+
+
+
+
+<div class="col-md-4 col-sm-12 col-xs-12 winner" style="float: right; margin-top: 50px">
+<center><p class="players" style="font-size: 70px" > Player 2</p>
+<br>
+<br>
+<p style="font-size: 55px">Wins : 
+<span id="player2wins">0</span></p></center>
+</div>
+<script type="text/javascript" src="/js/game.js"></script>
+<% include partials/footer.ejs %>
+
+

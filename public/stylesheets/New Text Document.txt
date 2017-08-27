@@ -1,0 +1,6 @@
+body {
+    background: url('https://wallpapersite.com/images/pages/pic_w/5491.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 70px;
+}

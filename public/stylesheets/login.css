@@ -1,0 +1,34 @@
+nav + .container {
+    margin-top: 40px;
+}
+body {
+    background: url('http://cdn.wallpapersafari.com/16/80/PmTbiE.jpg');
+    background-size: cover;
+    padding-top: 70px;
+}
+label {
+    margin-top: 10px;
+    color: white;
+}
+input[type="text"],input[type="password"] {
+    width: 40%;
+}
+h1 {
+    margin-top: 20px;
+    border-bottom: 3px solid rgba(110,110,110,0.8);
+    color: silver;
+    width: 60%;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: silver;
+}
+span {
+    position: absolute;
+    top: 90%;
+    right: 20px;
+    color: white;
+}
