@@ -7,14 +7,13 @@ var express                  = require("express"),
     passportLocalMongoose    = require("passport-local-mongoose");
 
 
-//mongoose.connect("mongodb://localhost/zettadb");
-mongoose.connect("mongodb://zetta1:zettapp@ds055782.mlab.com:55782/zettag");   
+mongoose.connect("mongodb://localhost/zettadb"); 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs" );
 app.use(express.static(__dirname + "/public"));
 
 app.use(require("express-session")({
-  secret: "PP is best",
+  secret: "PP",
   resave: false,
   saveUninitialized: false
 }));
@@ -30,7 +29,6 @@ var UserSchema = new mongoose.Schema({
 UserSchema.plugin(passportLocalMongoose);
 var User = mongoose.model("User",UserSchema);
 
-//user.authenticate comes from passportlocalmongoose
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
